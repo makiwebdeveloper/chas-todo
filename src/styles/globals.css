@@ -1,5 +1,49 @@
+:root {
+  --main-font: 'Montserrat', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: var(--main-font);
+  font-size: 18px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.button {
+  font-family: var(--main-font);
+  border: none;
+  background-color: rgb(226, 43, 144);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 1000px;
+  cursor: pointer;
+  transition: background-color 0.18s ease-in-out;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: rgb(162, 58, 231);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
 }

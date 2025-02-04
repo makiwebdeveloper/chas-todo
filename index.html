@@ -6,12 +6,45 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chas Todo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="src/styles/globals.css">
+  <link rel="stylesheet" href="src/styles/home.css">
   <script type="module" src="/src/main.ts" defer></script>
 </head>
 
 <body>
-  <section>1</section>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <p class="header__logo">Chas Todo</p>
+        <div class="header__profile" id="profile-block">
+          <button class="button google-btn" id="googleBtn">
+            <img src="/images/google-icon.svg" alt="google-icon">
+            Continue with Google
+          </button>
+          <button id="profileBtn"></button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <form id="createTodoForm" class="create-todo-form">
+      <input id="text" name="text" placeholder="text" />
+      <select name="complexity" id="complexity">
+        <option value="easy">easy</option>
+        <option value="medium">medium</option>
+        <option value="difficult">difficult</option>
+      </select>
+      <button type="submit">Create</button>
+    </form>
+    <section>
+      <p id="todosTitle"></p>
+      <ul id="todosList"></ul>
+    </section>
+  </div>
 </body>
 
 </html>
