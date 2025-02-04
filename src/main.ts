@@ -30,10 +30,12 @@ async function updateProfile() {
     profileBtn.innerHTML = `
       <img class="header__profile-img" src="${user.user_metadata?.avatar_url}" alt="${user.user_metadata?.name}" />
     `;
+    createTodoForm.style.display = "flex";
   } else {
     googleBtn.style.display = "flex";
     profileBtn.style.display = "none";
     profileBtn.innerHTML = "";
+    createTodoForm.style.display = "none";
   }
 }
 
